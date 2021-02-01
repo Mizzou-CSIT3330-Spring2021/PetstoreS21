@@ -50,6 +50,17 @@ public class Petstore {
         dog2.birthday(); 
         
         System.out.println(dog2.getName() + " is " + dog2.getAge() + " dog years old");
+        
+        // code from lecture 4
+        
+        Cat cat = new Cat("Susan", 2, FEMALE); 
+        
+        // Polymorphism (most important type) 
+        
+        Pet cat2 = new Cat("Poly", 3, MALE); 
+        
+        Pet dog3 = new Dog("Poly2", 3, FEMALE);
+        
     }
     
 }

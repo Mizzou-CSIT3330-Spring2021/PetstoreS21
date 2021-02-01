@@ -25,6 +25,18 @@ public class Dog extends Pet {
         return age * 7; 
     }
     
+    // Method overloading (Same method name in the same class with different parameter list) 
+        
+    public void bark(int num){
+        for(int i = 0; i < num; i++){
+            System.out.println("Bark!");
+        }
+    }
+    
+    public void bark(){
+        bark(1); 
+    }
+    
 //    public void test(){
 //        this.age =  10;  
 //    }
