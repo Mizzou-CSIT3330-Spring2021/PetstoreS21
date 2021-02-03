@@ -11,6 +11,15 @@ package petstore;
  */
 public class Dog extends Pet {
     
+    // class field (static variable) 
+    private static int numOfDogs = 0;
+    
+    // instance field (non-static variable) 
+    private int id = 0; 
+    
+    // constant 
+    private static final String GENUS = "Canis"; 
+    
     public Dog(String name, int age, Gender gender){
         super("Dog", name, age, gender); 
     }

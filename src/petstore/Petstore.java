@@ -61,6 +61,44 @@ public class Petstore {
         
         Pet dog3 = new Dog("Poly2", 3, FEMALE);
         
+        // lecture 5
+        
+        Cat cat1 = new Cat("Susan", 2, FEMALE); 
+        
+        // implicit casting (polymorpism) 
+        
+        Pet pet3 = cat1; 
+        Pet pet4 = dog3; // test to show polymorpism
+        
+//        pet3.meow(); 
+
+        // if we try it the other way around, error
+        // why? because not all pet's are cat's  
+//        Cat cat4 = pet3
+        
+        // Explicit casting (not polymorphism) 
+        
+        Cat cat3 = (Cat) pet3;
+//        Cat cat4 = (Cat) pet4; // test to show not polymorhism
+        
+        cat3.meow();
+        
+//        Cat cat5 = null; 
+        // we also do a logical test as to the type of a particular object 
+        // using the instanceof operator 
+        if (pet3 instanceof Cat){
+            Cat cat5 = (Cat) pet3; 
+            
+            cat5.meow(5);
+        }
+        
+//        cat5.meow(5);
+        
+        // test to try it the other way around ... failed ... runtime error 
+//        Pet test = new Pet("Cat", "No", 2, FEMALE); 
+//        
+//        Cat test2 = (Cat) test; 
+        
     }
     
 }
