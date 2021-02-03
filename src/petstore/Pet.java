@@ -22,13 +22,21 @@ public class Pet {
     // no-arg constructor 
     public Pet(){
         // Constructors are special methods, with the same as the class, 
-        // and no return type 
+        // and no return type
+        
+        age = 0;
+    }
+    
+    public Pet(String type, String name){
+        this(); 
+        this.type = type; 
+        this.name = name; 
     }
     
     // parameter constructor 
     public Pet(String type, String name, int age, Gender gender){
-        this.type = type; 
-        this.name = name; 
+        this(type, name); // constructor chaining 
+        
         this.age = age; 
         this.gender = gender;
     }
