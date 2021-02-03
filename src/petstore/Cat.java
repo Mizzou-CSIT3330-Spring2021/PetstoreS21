@@ -7,7 +7,7 @@ package petstore;
 
 /**
  *
- * @author Nick_Work
+ * @author Professor Wergeles <Professor Wergeles at cs3330@missouri.edu>
  */
 public class Cat extends Pet {
     
