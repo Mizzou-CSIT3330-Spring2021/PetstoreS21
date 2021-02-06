@@ -5,6 +5,8 @@
  */
 package petstore;
 
+import pets.Dog;
+import pets.Cat;
 import static petstore.Gender.FEMALE;
 import static petstore.Gender.MALE; 
 

@@ -3,13 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package petstore;
+package pets;
+
+import petstore.Gender;
+import petstore.Pet;
 
 /**
  *
  * @author Professor Wergeles <Professor Wergeles at cs3330@missouri.edu>
  */
 public class Cat extends Pet {
+    
+    
     
     // constructors are special methods 
     // same name as class, no return type
